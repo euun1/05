@@ -5,21 +5,30 @@
 
 int main(int argc, char *argv[]) {
 	
-	char c;
-	int num=0;
+	int a,b,result;
+	char o;
 	
-	printf("문자열을 입력하세요: ");
-	scanf("%c", &c);
+	printf("enter the caltulation : ");
+	scanf("%d %c %d", &a, &o, &b);
 	
-	while ((c=getchar())!='\n')
+	switch (o) 
 	{
-		if(c>='0' && c<='9')
-		{
-			num++;
-		}
+	case '+':
+        result = a + b;
+        break;
+    case '-':
+        result = a - b;
+        break;
+    case '*':
+        result = a * b;
+        break;
+    case '/':
+        result = a / b;
+        break;
 	}
+
+    printf("= %d\n", result);
 	
-	printf("the number of digits is %d\n", num);
 	 
 	system("PAUSE");
 	return 0;
