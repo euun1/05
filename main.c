@@ -12,15 +12,11 @@ int main(int argc, char *argv[]) {
 	
 	if (a>0)
 	{
-		printf("양수입니다.");
-	 }
-	 else if (a<0)
-	{
-		printf("음수입니다.");
+		printf("절대값은 %d 입니다.\n", a);
 	 }
 	 else
 	{
-		printf("0 입니다.");
+		printf("절대값은 %d 입니다.\n", -a);
 	 }
 	 
 	system("PAUSE");
